@@ -1,0 +1,15 @@
+:root {
+    /*declaramos nuestras variables*/
+    --naranja: #f90;
+    --gris-oscuro: #27262b;
+    --gris-claro: #ccc;
+    --blanco: #fff;
+    --negro: #000;
+
+}
+
+body{
+    background-color: var(--gris-claro);
+    /*background-image: ;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
