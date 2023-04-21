@@ -9,7 +9,30 @@
 }
 
 body{
-    background-color: var(--gris-claro);
-    /*background-image: ;*/
-    font-family: Arial, Helvetica, sans-serif;
+    /*background-color: var(--gris-claro)*/
+    background-image: url(sitio/3alas.jpg)
+    font-family Arial, Helvetica, sans-serif;
+}
+.cabecera,
+.contenido {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cabecera{
+    background-color: rgb(190, 130, 160);
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+.contenido{
+    background-color: rgb(193, 193, 231);
+}
+cabecera-title{
+    color: #f90;
+    font-size: 24px;
+
+   
 }
