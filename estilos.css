@@ -5,13 +5,19 @@
     --gris-claro: #ccc;
     --blanco: #fff;
     --negro: #000;
+    --amarillo: #f3dd63;
 
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body{
-    /*background-color: var(--gris-claro)*/
-    background-image: url(sitio/3alas.jpg)
-    font-family Arial, Helvetica, sans-serif;
+    background-color: var(--gris-claro);
+    background-image: url(sitio/images/pattern.jpg);
+    font-family : Arial, Helvetica, sans-serif;
 }
 .cabecera,
 .contenido {
@@ -21,18 +27,120 @@ body{
 }
 
 .cabecera{
-    background-color: rgb(190, 130, 160);
+   /* background-color: rgb(190, 130, 160);*/
     display: flex;
     justify-content: space-between;
 
     align-items: center;
 }
 .contenido{
-    background-color: rgb(193, 193, 231);
+    background-color: rgb(231, 231, 236);
 }
-cabecera-title{
+.cabecera-title{
     color: #f90;
     font-size: 24px;
+}
+.nav{
+    background-color:#f90;
+    font-family: 'Courier New', Courier, monospace;
+    border-top: 100px;
+    
+}
+.nav-lista {
+    
+    list-style: none;
+    display: flex;
+    margin-bottom: 32px;
+}
+.nav-from{
+    flex-grow: 1;
+    text-align: right;
+    
+}
+.nav-item{
+    display: block;
+    flex-grow: 1;
+    
+}
+.nav-link{
+    color: #ccc;
+    display: block;
+    border-right: 1px solid var(--amarillo);
+    padding: 12px 12px;
+}
+.nav-link:hover{
+    text-decoration:dashed;
+}
+.imagen{
+    text-align: center;
+    margin-bottom: 32px;
+}
+/*     P R O D U C T O S    */
+.productos{
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 20px;
+}
+.izquierda{
+    background-color: aqua;
+    
+}
+.derecha{
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 
-   
+}
+
+.productos{
+    background-color: coral;
+}
+.producto-title{
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+.newsletter{
+    background-image: linear-gradient(
+        var(--blanco) 70%,
+        var(--gris-claro)
+    );
+    margin-bottom: 250px;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid var(--gris-claro);
+
+    /* Redondea las puntas */
+    border-radius: 4px ;
+
+    padding: 12px 32px;
+
+    /*Ubico un elemento al lado del otro*/
+    display: flex;
+    align-items: center;
+    
+
+}
+.newsletter-texto{
+    
+    margin-left: 24px;
+}
+.parrafo2{
+    margin-left: 24px;
+}
+.newsletter-form{
+    
+    flex-grow: 1;
+    text-align: right;
+}
+.newsletter-form input[type="submit"]{
+    background: none;
+    border: 0;
+
+    font-weight: bold;
+
+    /* Devolvemos "la manito"*/
+    cursor: pointer;
 }
