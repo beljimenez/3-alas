@@ -15,8 +15,8 @@
 }
 
 body{
-    background-color: var(--gris-claro);
-    background-image: url(sitio/images/pattern.jpg);
+    background-color: red;
+    
     font-family : Arial, Helvetica, sans-serif;
 }
 .cabecera,
