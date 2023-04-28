@@ -83,11 +83,11 @@ body{
     gap: 20px;
 }
 .izquierda{
-    background-color: rgb(194, 226, 226);
+    background-color: #c2e2e2;
     
 }
 .derecha{
-    background-color: rgb(236, 227, 225);
+    background-color: #ece3e1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
