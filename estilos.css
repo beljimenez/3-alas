@@ -8,6 +8,10 @@
     --amarillo: #f3dd63;
 
 }
+
+/*   <<< RESET >>>   */
+/* Selector universal, seleccciona todos los elementos del HTML y les aplica lo que escribamos como bordes, padding, margin etc. 
+siempre va arriba de todo ( después del root) */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -15,42 +19,56 @@
 }
 
 body{
-    background-color: red;
-    
+    background-color: var(--gris-oscuro);
+    background-image: url(sitio/images/pattern.jpg);
+
+    /* Todo el sitio va a estar con sans-serif*/
     font-family : Arial, Helvetica, sans-serif;
 }
+
+
 .cabecera,
 .contenido {
     max-width: 1200px;
+
+
+    /* Márgen automático me centra los elementos en la pantalla*/
     margin-left: auto;
     margin-right: auto;
 }
 
 .cabecera{
-   /* background-color: rgb(190, 130, 160);*/
+   
     display: flex;
-    justify-content: space-between;
 
+    /* Separa los elementos, cada uno en su esquina*/
+    justify-content: space-between;
+     /* Centrarlos verticalmente*/
     align-items: center;
 }
 .contenido{
-    background-color: rgb(231, 231, 236);
+    background-color: var(--blanco);
 }
 .cabecera-title{
     color: #f90;
     font-size: 24px;
 }
+/*    << BOTONERA >>    */
 .nav{
-    background-color:#f90;
+    background-color: var(--naranja) ;
     font-family: 'Courier New', Courier, monospace;
     border-top: 100px;
     
 }
 .nav-lista {
-    
+    /* Elemina los puntitos de la lista*/
     list-style: none;
     display: flex;
+    align-items: center;
     margin-bottom: 32px;
+
+    padding: 12px;
+    padding-left: 40px;
 }
 .nav-from{
     flex-grow: 1;
@@ -63,18 +81,23 @@ body{
     
 }
 .nav-link{
-    color: #ccc;
+    color: var(--blanco);
     display: block;
+    font-weight: bold;
+    text-decoration: none;
     border-right: 1px solid var(--amarillo);
     padding: 12px 12px;
 }
 .nav-link:hover{
-    text-decoration:dashed;
+    text-decoration:underline;
 }
+
+/*      IMAGEN      */
 .imagen{
     text-align: center;
     margin-bottom: 32px;
 }
+
 /*     P R O D U C T O S    */
 .productos{
     background-color: pink;
@@ -95,7 +118,7 @@ body{
 }
 
 .productos{
-    background-color: coral;
+    background-color: #ece3e1;
 }
 .producto-title{
     margin-bottom: 12px;
